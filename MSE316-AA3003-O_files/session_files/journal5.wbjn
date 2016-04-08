@@ -1,0 +1,13 @@
+﻿# encoding: utf-8
+# Release 16.1
+SetScriptVersion(Version="16.1.91")
+system1 = GetSystem(Name="SYS")
+solutionComponent1 = system1.GetComponent(Name="Solution")
+solutionComponent1.Clean()
+system2 = GetSystem(Name="SYS 1")
+solutionComponent2 = system2.GetComponent(Name="Solution")
+solutionComponent2.Clean()
+system3 = GetSystem(Name="SYS 2")
+solutionComponent3 = system3.GetComponent(Name="Solution")
+solutionComponent3.Clean()
+Save(Overwrite=True)
